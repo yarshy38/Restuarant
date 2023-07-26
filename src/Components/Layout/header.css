@@ -13,3 +13,8 @@
     text-decoration: none;
     color: white;
 }
+
+.active {
+    color: goldenrod !important;
+    font-weight: bold !important;
+}

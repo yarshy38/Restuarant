@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import './header.css'
 // import { BsMenuButton } from "react-icons/bs";
 import { AppBar, Box, Toolbar, Typography, Drawer } from '@mui/material';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 
 const Header = () => {
@@ -48,16 +48,16 @@ const Header = () => {
                         <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
                             <ul className='nav-menu'>
                                 <li>
-                                    <Link to='/'>Home</Link>
+                                    <NavLink activeClassName='active' to='/'>Home</NavLink>
                                 </li>
                                 <li>
-                                    <Link to='/menu'>Menu</Link>
+                                    <NavLink to='/menu'>Menu</NavLink>
                                 </li>
                                 <li>
-                                    <Link to='/contact'>Contact</Link>
+                                    <NavLink to='/contact'>Contact</NavLink>
                                 </li>
                                 <li>
-                                    <Link to='/about'>About</Link>
+                                    <NavLink to='/about'>About</NavLink>
                                 </li>
 
                             </ul>
